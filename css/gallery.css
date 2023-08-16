@@ -1,0 +1,100 @@
+/* gallery container */
+#house-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 
+    "p p img01 img01 img02"
+    "p p img03 img03 img02"
+    "img04 img04 img05 img09 img09"
+    "img04 img04 img05 img10 img10"
+    "img07  img08 img08 img06 img06";
+    } 
+
+#house-gallery .gallery-img {
+    width: 100%;
+    height: 18.75rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Images */
+#house-gallery p {
+    grid-area: p;
+    font-family: var(--ff-para);
+    font-size: var(--fs-xx-small);
+    text-align: left;
+}
+#house-gallery .img01 {
+    grid-area: img01;
+    background-image: url("../assets/thumbs/thumb01.jpg");
+}
+#house-gallery .img02 {
+    grid-area: img02;
+    background-image: url("../assets/thumbs/thumb02.jpg");
+    height: 38.5rem;
+}
+#house-gallery .img03 {
+    grid-area: img03;
+    background-image: url("../assets/thumbs/thumb03.jpg");
+}
+#house-gallery .img04{
+    grid-area: img04;
+    background-image: url("../assets/thumbs/thumb04.jpg");
+    height: 38.5rem;
+}
+#house-gallery .img05{
+    grid-area: img05;
+    background-image: url("../assets/thumbs/thumb05.jpg");
+    height: 38.5rem;
+}
+#house-gallery .img06 {
+    grid-area: img06;
+    background-image: url("../assets/thumbs/thumb06.jpg");
+    
+}
+#house-gallery .img07 {
+    grid-area: img07;
+    background-image: url("../assets/thumbs/thumb07.jpeg");
+    
+}
+#house-gallery .img08 {
+    grid-area: img08;
+    background-image: url("../assets/thumbs/thumb08.jpg");
+    
+}
+#house-gallery .img09 {
+    grid-area: img09;
+    background-image: url("../assets/thumbs/thumb09.jpg");
+}
+#house-gallery .img10 {
+    grid-area: img10;
+    background-image: url("../assets/thumbs/thumb10.jpg");
+}
+
+
+
+/* gallery-img titles*/
+
+.gallery-img div {
+width: 100%;
+height: 100%;
+background-color: #000;
+opacity: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.gallery-img a {
+    font-family: var(--ff-para);
+    font-size: var(--fs-xx-small);
+    color: var(--clr-font);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.gallery-img div:hover {
+    opacity: 0.8;
+    }
