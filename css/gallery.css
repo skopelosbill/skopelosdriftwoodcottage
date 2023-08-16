@@ -27,6 +27,7 @@
     font-family: var(--ff-para);
     font-size: var(--fs-xx-small);
     text-align: left;
+    align-self: center;
 }
 #house-gallery .img01 {
     grid-area: img01;

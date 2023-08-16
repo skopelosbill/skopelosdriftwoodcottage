@@ -121,7 +121,7 @@ video {
 }
 
 .wrapper-gallery {
-  margin: 0 10vw;
+  margin: 1em 1em;
 }
  /*image grid
 
@@ -172,7 +172,8 @@ video {
   header #hamburger,
   nav a,
   .subdisplay,
-  #box1 {
+  #box1,
+  #house-gallery p {
       font-size: var(--fs-small)
     }
     video {
