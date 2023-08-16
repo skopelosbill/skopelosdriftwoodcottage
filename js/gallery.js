@@ -7,7 +7,7 @@ if(galleryImages) {
         image.onclick = function() {
             let getElementCss = window.getComputedStyle(image);
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-            let getImgUrlPos = getFullImgUrl.split("");
+            let getImgUrlPos = getFullImgUrl.split("/img/thumbs");
             let setNewImgUrl = getImgUrlPos[1].replace('")', '');
             
 
