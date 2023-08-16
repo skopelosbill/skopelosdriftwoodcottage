@@ -190,7 +190,8 @@ video {
   nav a,
   .subdisplay,
   #box1, 
-  .container > p{
+  .container > p,
+  #house-gallery p{
       font-size: var(--fs-med)
     }
     video {
