@@ -5,11 +5,11 @@
     grid-template-rows: auto;
     gap: 1rem;
     grid-template-areas: 
-    "p p img01 img01 img02"
-    "p p img03 img03 img02"
-    "img04 img04 img05 img09 img09"
-    "img04 img04 img05 img10 img10"
-    "img07  img08 img08 img06 img06";
+    "p p img1 img1 img2"
+    "p p img3 img3 img2"
+    "img4 img4 img5 img9 img9"
+    "img4 img4 img5 img10 img10"
+    "img7  img8 img8 img6 img6";
     } 
 
 #house-gallery .gallery-img {
@@ -29,47 +29,47 @@
     text-align: left;
     align-self: center;
 }
-#house-gallery .img01 {
-    grid-area: img01;
-    background-image: url("../img/thumbs/img01.jpg");
+#house-gallery .img1 {
+    grid-area: img1;
+    background-image: url("../img/thumbs/img1.jpg");
 }
-#house-gallery .img02 {
-    grid-area: img02;
-    background-image: url("../img/thumbs/img02.jpg");
+#house-gallery .img2 {
+    grid-area: img2;
+    background-image: url("../img/thumbs/img2.jpg");
     height: 38.5rem;
 }
-#house-gallery .img03 {
-    grid-area: img03;
-    background-image: url("../img/thumbs/img03.jpg");
+#house-gallery .img3 {
+    grid-area: img3;
+    background-image: url("../img/thumbs/img3.jpg");
 }
-#house-gallery .img04{
-    grid-area: img04;
-    background-image: url("../img/thumbs/img04.jpg");
+#house-gallery .img4{
+    grid-area: img4;
+    background-image: url("../img/thumbs/img4.jpg");
     height: 38.5rem;
 }
-#house-gallery .img05{
-    grid-area: img05;
-    background-image: url("../img/thumbs/img05.jpg");
+#house-gallery .img5{
+    grid-area: img5;
+    background-image: url("../img/thumbs/img5.jpg");
     height: 38.5rem;
 }
-#house-gallery .img06 {
-    grid-area: img06;
-    background-image: url("../img/thumbs/img06.jpg");
+#house-gallery .img6 {
+    grid-area: img6;
+    background-image: url("../img/thumbs/img6.jpg");
     
 }
-#house-gallery .img07 {
-    grid-area: img07;
-    background-image: url("../img/thumbs/img07.jpeg");
+#house-gallery .img7 {
+    grid-area: img7;
+    background-image: url("../img/thumbs/img7.jpeg");
     
 }
-#house-gallery .img08 {
-    grid-area: img08;
-    background-image: url("../img/thumbs/img08.jpg");
+#house-gallery .img8 {
+    grid-area: img8;
+    background-image: url("../img/thumbs/img8.jpg");
     
 }
-#house-gallery .img09 {
-    grid-area: img09;
-    background-image: url("../img/thumbs/img09.jpg");
+#house-gallery .img9 {
+    grid-area: img9;
+    background-image: url("../img/thumbs/img9.jpg");
 }
 #house-gallery .img10 {
     grid-area: img10;
@@ -117,8 +117,8 @@ align-items: center;
     z-index: 100;
 }
 .img-window img {
-    max-height: 90vh;
-    max-width: 90vw;
+    max-height: 80vh;
+    max-width: 80vw;
 }
 
 /* Image buttons */
