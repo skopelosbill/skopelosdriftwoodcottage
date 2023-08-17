@@ -120,3 +120,41 @@ align-items: center;
     max-height: 90vh;
     max-width: 90vw;
 }
+
+/* Image buttons */
+
+.img-btn-next {
+    display: block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: var(--clr-bg);
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: var(--ff-para);
+    color: var(--clr-font);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-btn-next:hover {
+    background-color: var(--clr-font);
+    color: var(--clr-bg);
+}
+.img-btn-prev {
+    display: block;
+    padding:4px 10px;
+    border-radius: 4px;
+    background-color: var(--clr-bg);
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: var(--ff-para);
+    color: var(--clr-font);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.img-btn-prev:hover {
+    background-color: var(--clr-font);
+    color: var(--clr-bg);
+}
+
