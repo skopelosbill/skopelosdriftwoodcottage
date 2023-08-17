@@ -9,7 +9,6 @@ if(galleryImages) {
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
             let getImgUrlPos = getFullImgUrl.split("/img/thumbs");
             let setNewImgUrl = getImgUrlPos[1].replace('")', '');
-            
 
             getLatestOpenedImg = index + 1;
 
@@ -47,6 +46,7 @@ if(galleryImages) {
         }
     });
 }
+/*
 function closeImg() {
     document.querySelector(".img-window").remove();
     document.querySelector(".img-btn-next").remove();
@@ -74,8 +74,8 @@ function changeImg(changeDir) {
         }
     }
     
-        newImg.setAttribute("src", "img/img" + calcNewImg + ".jpg");
+     newImg.setAttribute("src", "img/img" + calcNewImg + ".jpg");
         newImg.setAttribute("id", "current-img");
     
    
-}
+}*/
