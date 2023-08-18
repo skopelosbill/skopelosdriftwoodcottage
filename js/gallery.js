@@ -2,6 +2,10 @@ let galleryImages = document.querySelectorAll(".gallery-img");
 let getLatestOpenedImg;
 let windowWidth = window.innerWidth;
 
+if (windowWidth <= 767) {
+    closeImg();
+}
+
 if (galleryImages) {
     galleryImages.forEach(function(image, index) {
         image.onclick = function() {
