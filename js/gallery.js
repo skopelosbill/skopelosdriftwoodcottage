@@ -1,8 +1,8 @@
 let galleryImages = document.querySelectorAll(".gallery-img");
 let getLatestOpenedImg;
 let windowWidth = window.innerWidth;
-alert(windowWidth);
-if (windowWidth < 768) {
+
+if (windowWidth < 820) {
     closeImg();
 }
 

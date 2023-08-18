@@ -159,7 +159,7 @@
         color: var(--clr-bg);
     }
     
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     #house-gallery {
         display: grid;
         grid-template-columns: 1fr;
