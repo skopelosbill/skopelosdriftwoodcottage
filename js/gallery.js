@@ -49,7 +49,7 @@ if (galleryImages) {
                 newPrevBtn.setAttribute("onclick", "changeImg(0)");
                 newPrevBtn.style.cssText = "left: " + calcImgToLeftEdge + "px;";
 
-                let backToWebsite = document.createElement("h6");
+                let backToWebsite = document.createElement("p");
                 let backToWebsiteText = document.createTextNode("click to return to the website");
                 backToWebsite.appendChild(backToWebsiteText);
                 fullImgContainer.appendChild(backToWebsite);
