@@ -92,7 +92,7 @@
     }
     .gallery-img a {
         font-family: var(--ff-para);
-        font-size: var(--fs-x-small);
+        font-size: var(--fs-med);
         color: var(--clr-font);
         text-decoration: none;
         text-transform: uppercase;
@@ -133,6 +133,7 @@
         top: 48vh;
         z-index: 500;
         font-family: var(--ff-para);
+        font-size: var(--fs-s-med);
         color: var(--clr-font);
         cursor: pointer;
         text-transform: uppercase;
@@ -150,6 +151,7 @@
         top: 48vh;
         z-index: 500;
         font-family: var(--ff-para);
+        font-size: var(--fs-s-med);
         color: var(--clr-font);
         cursor: pointer;
         text-transform: uppercase;
@@ -157,6 +159,20 @@
     .img-btn-prev:hover {
         background-color: var(--clr-font);
         color: var(--clr-bg);
+        
+    }
+
+    .img-closer {
+        display: block;
+        cursor: pointer;
+        font-family: var(--ff-para);
+        font-size: var(--fs-small);
+        color: var(--clr-font);
+        z-index: 500;
+        text-transform: uppercase;
+        position: fixed;
+        top: 92vh;
+        left: 40vw;
     }
     
 @media (max-width: 820px) {

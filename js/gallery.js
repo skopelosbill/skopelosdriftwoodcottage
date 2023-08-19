@@ -48,6 +48,13 @@ if (galleryImages) {
                 newPrevBtn.setAttribute("class", "img-btn-prev");
                 newPrevBtn.setAttribute("onclick", "changeImg(0)");
                 newPrevBtn.style.cssText = "left: " + calcImgToLeftEdge + "px;";
+
+                let backToWebsite = document.createElement("h6");
+                let backToWebsiteText = document.createTextNode("click to return to the website");
+                backToWebsite.appendChild(backToWebsiteText);
+                fullImgContainer.appendChild(backToWebsite);
+                backToWebsite.setAttribute("class", "img-closer");
+                backToWebsite.setAttribute("onclick", "closeImg()");
             }
             
         }
@@ -58,6 +65,7 @@ function closeImg() {
     document.querySelector(".img-window").remove();
     document.querySelector(".img-btn-next").remove();
     document.querySelector(".img-btn-prev").remove();
+    document.querySelector(".img-closer").remove();
 }
 
 function changeImg(changeDir) {
