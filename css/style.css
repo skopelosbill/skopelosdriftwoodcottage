@@ -139,6 +139,7 @@ video {
     "card1"
     "card2"
     "card3";
+  margin: auto;
 }
 #card1 {
   grid-area: card1;
@@ -153,8 +154,9 @@ video {
   border: 0.1em solid var(--clr-font);
   border-radius: 0.5em;
   padding: 1em 2em;
-  margin: 1em;
-  width: 90vw;
+  margin: auto;
+  margin-bottom: 1em;
+  width: 70vw;
   height: auto;
   font-family: var(--ff-para);
   color: var(--clr-font);
