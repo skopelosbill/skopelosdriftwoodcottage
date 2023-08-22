@@ -131,7 +131,8 @@ video {
 
 .gridcontainercards {
   display: grid;
-  width:70%;
+  width:100%;
+  margin-left: 0;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 1rem;
@@ -139,7 +140,7 @@ video {
     "card1"
     "card2"
     "card3";
-  margin: auto;
+
 }
 #card1 {
   grid-area: card1;
@@ -156,7 +157,7 @@ video {
   padding: 1em 2em;
   margin: auto;
   margin-bottom: 1em;
-  width: 70vw;
+  width: 70%;
   height: auto;
   font-family: var(--ff-para);
   color: var(--clr-font);
@@ -249,7 +250,7 @@ video {
       width:100%;
     }
     .gridcontainercards {
-      max-width: 70vw;
+      width: 100%;
       height: auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -258,13 +259,14 @@ video {
       grid-template-areas:
         "card1 card2"
         "card3 card3" ;
+      
     }
     .gridcontainercards > #card1, 
     .gridcontainercards > #card2 {
       width: 43vw;
     }
     #card3 {
-      width: 92vw;
+      width: 93vw;
     }
 
  }
