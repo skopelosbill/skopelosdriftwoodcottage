@@ -44,6 +44,9 @@
                 <a href="#price" aria-label="price" onclick="closeNav()">Price</a>
             </li>
             <li>
+                <a href="#testimonials" aria-label="testimonials" onclick="closeNav()">Testimonials</a>
+            </li>
+            <li>
                 <a href="#contact" aria-label="contact" onclick="closeNav()">Contact</a>
             </li>  
         </ul>
@@ -60,9 +63,11 @@
 
     <!-- About the owners -->
 
-    <section class="subdisplay" id="abouttheowners">
-        <h2>About the Owners</h2>
-        <h3>Jan and Howard</h3>
+    <section class="abouttheowners" aria-label="about the owners">
+        <div class="subdisplay" id="abouttheowners">
+            <h2>About the Owners</h2>
+            <h3>Jan and Howard</h3> 
+        </div>
         <div class="flexcontainer">
             <div id="box1">
                 <p>Welcome to our website, we hope you enjoy looking over it and we look forward to welcoming you to our beauiful Greek Island town house so so that you can experience and enjoy life on Skopelos. We have lived here since 2020 in a farmhouse on a small olive farm with our dogs.  We love Skopelos and the simple way of life here which you will experience first hand during your stay at Driftwood Cottage.</p>
@@ -74,9 +79,14 @@
     </section>
 
     <!-- About the House -->
-    <section class="subdisplay" id="house">
-        <h2>House Gallery</h2>
-        <h3>Introducing Driftwood Cottage</h3>
+
+    <section class="house" aria-label="house gallery">
+        <div class="subdisplay" id="house">
+            <h2>House Gallery</h2>
+            <h3>Introducing Driftwood Cottage</h3>
+            <p>Click on any image to enter the slideshow of higher resolution images.</p>
+        </div>
+       
         <div class="container wrapper-gallery" id="house-gallery">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dignissimos at iste minima cum qui tenetur, quis consectetur quia consequuntur fuga atque cupiditate natus consequatur a, voluptate blanditiis maxime quaerat officia itaque incidunt nulla illum, ab quasi? Saepe dignissimos alias quibusdam, odio dicta corporis modi aut neque ullam nostrum cum!</p>
 
@@ -114,26 +124,58 @@
         </div>       
     </section>
    
+    <!-- Price -->
    
-    <section class="subdisplay" id="price">
-        <h2>Price</h2>
-        <p>Skopelos Driftwood Cottage represents excellent value for money as it sleeps four adults, all the benefits of a private house for approximately the per person price of a domatia.</p>
-        <div class="card">
-            <h3>In Season</h3>
-            <h4>180 Euros per night</h4>
+    <section class="price" aria-label="price">
+        <div class="subdisplay" id="price">
+            <h2>Price</h2>
+            <p>Skopelos Driftwood Cottage represents excellent value for money as it sleeps four adults, all the benefits of a private house for approximately the per person price of a domatia.</p>
         </div>
-        <div class="card">
-            <h3>Out of Season</h3>
-            <h4>150 Euros per night</h4>
-        </div>
-        <div class="card">
-            <h3>Special Offer</h3>
-            <p>Stay 5 nights and get free use of the owner's private car for one day!</p>
+    </section>
+        <div class="gridcontainercards">
+            <div class="card" id="card1">
+                <h3>In Season</h3>
+                <h4>180 Euros per night</h4>
+            </div>
+            <div class="card" id="card2">
+                <h3>Out of Season</h3>
+                <h4>150 Euros per night</h4>
+            </div>
+            <div class="card" id="card3">
+                <h3>Special Offer</h3>
+                <p>Stay 5 nights and get free use of the owner's private car for one day!</p>
+            </div>
         </div>
 
+
+        
+    
+
+    <!-- Testimonials -->
+        
+    <section class="testimonials" aria-label="testimonials">
+        <div class="subdisplay" id="testimonials">
+            <h2>Testimonials</h2>
+        </div>
     </section>
-    <section class="subdisplay" id="contactus">
-        <h2>Contact Us</h2>
+        <div class="testimonials">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="comment">We had a very nice time!  The house is mega beautiful and furnished with a lot of love.  The roof terrace is a dream, great view and even a grill.  There are 2 bathrooms and 2 toilets, which of course is also very great!  Jan was ALWAYS reachable and had so many good tips for us that we didn't have to take care of anything.  She even lent us her car for free for a day.  Welcome - its wine, bread, olives and cheese!!  The house is super suitable for families and also for friends, because it is on 3 levels, it is rather not suitable for people who are stairs. We will definitely be back.</p>
+            <i class="fa-solid fa-quote-right"></i>
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="comment">The accomodation exceeded our expectations.  It's an authentic house in the center of Skopelos, literally the harbor, pubs, bars, and shops.  A three-story house has absolutely everything you need.  Equipped kitchen, three air-conditioned bedrooms, two bathrooms and toilet, washing machine, beautiful patio with barbecue.  Host Jan is very active and helpful.  She gave us her own car for a day and lots of helpful advice.  I definitely recommend.</p>
+            <i class="fa-solid fa-quote-right"></i>  
+        </div>
+    
+
+    <!-- Contact Us-->
+
+
+    <section class="contactus" aria-label="contact us">
+        <div class="subdisplay" id="contact">
+            <h2>Contact Us</h2>
+        </div>
+        
     </section>
     
     <script src="/js/script.js"></script>
@@ -141,4 +183,3 @@
 </body>
 </html>
 
-    

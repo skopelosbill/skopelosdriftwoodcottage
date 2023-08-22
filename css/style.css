@@ -101,6 +101,7 @@ video {
     border-top: solid 0.1em;
 }
 
+
 .flexcontainer {
   display: flex;
   flex-direction: column;
@@ -114,6 +115,7 @@ video {
   text-align:left;
   font-family: var(--ff-para);
   font-size: xx-small;
+  color: var(--clr-font);
 }
 #box2 > img {
   padding: 1em;
@@ -123,21 +125,77 @@ video {
 .wrapper-gallery {
   margin: 1em 1em;
 }
+.wrapper-gallery > p {
+  color: var(--clr-font);
+}
 
-
+.gridcontainercards {
+  display: grid;
+  width:70%
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  grid-template-areas: 
+    "card1"
+    "card2"
+    "card3";
+}
+#card1 {
+  grid-area: card1;
+}
+#card2 {
+  grid-area: card2;
+}
+#card3 {
+  grid-area: card3;
+}
 .card {
-  display: block;
   border: 0.1em solid var(--clr-font);
   border-radius: 0.5em;
   padding: 1em 2em;
   margin: 1em;
+  width: 90vw;
+  height: auto;
+  font-family: var(--ff-para);
+  color: var(--clr-font);
+  font-size: var(--fs-xx-small);
+  text-align: center;
 }
+
+.testimonials {
+  
+  height: auto;
+  margin: 0 auto;
+  font-family: var(--ff-para);
+  color:var(--clr-font);
+  margin-bottom: 1rem;
+}
+.testimonials > .fa-quote-left {
+  margin: 5%;
+  font-size: var(--fs-small); 
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+.testimonials .comment {
+  width: 85%;
+  margin: 0 auto;
+  /*text-align: center;*/
+  font-size: var(--fs-xx-small);  
+}
+.testimonials > .fa-quote-right {
+  margin-left: 95%;
+  font-size: var(--fs-small); 
+  padding-bottom: 0.5em; 
+}
+
 
  @media (min-width: 425px) {
     .subdisplay,
     header,
     header #hamburger,
-    nav a {
+    nav a,
+    .card,
+    .testimonials > .comment {
       font-size: var(--fs-x-small)
     }
     video {
@@ -150,7 +208,9 @@ video {
   nav a,
   .subdisplay,
   #box1,
-  #house-gallery p {
+  #house-gallery p,
+  .card,
+  .testimonials > .comment {
       font-size: var(--fs-small)
     }
     video {
@@ -161,14 +221,15 @@ video {
  }
  
  @media (min-width: 768px) {
-  
   header,
   header #hamburger,
   nav a,
   .subdisplay,
   #box1, 
   .container > p,
-  #house-gallery p{
+  #house-gallery p,
+  .card,
+  .testimonials > .comment {
       font-size: var(--fs-med)
     }
     video {
@@ -185,16 +246,34 @@ video {
     #box2 > img {
       width:100%;
     }
-    .card {
-      display: inline-block;
+    .gridcontainercards {
+      max-width: 70vw;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 1px;
+      grid-template-areas:
+        "card1 card2"
+        "card3 card3" ;
     }
+    .gridcontainercards > #card1, 
+    .gridcontainercards > #card2 {
+      width: 43vw;
+    }
+    #card3 {
+      width: 92vw;
+    }
+
  }
  
  @media (min-width: 1024px) {
   .subdisplay,
   header,
   header #hamburger,
-  nav a {
+  nav a,
+  .card,
+  .testimonials > .comment {
       font-size: var(--fs-lge)
     }
     video {
@@ -206,7 +285,9 @@ video {
   .subdisplay,
   header,
   header #hamburger,
-  nav a {
+  nav a,
+  .card,
+  .testimonials > .comment {
       font-size: var(--fs-x-lge)
     }
     video {
