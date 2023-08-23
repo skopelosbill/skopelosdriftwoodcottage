@@ -101,6 +101,10 @@ video {
     border-top: solid 0.1em;
 }
 
+.nodisplay {
+  display: none;
+}
+
 
 .flexcontainer {
   display: flex;
@@ -357,6 +361,9 @@ video {
     }
     video {
       width: 70%;
+    }
+    .nodisplay {
+      display: contents;
     }
     .flexcontainer {
       flex-direction: row;
