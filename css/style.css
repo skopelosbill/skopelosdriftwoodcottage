@@ -180,19 +180,25 @@ video {
 .testimonials > .fa-quote-left {
   margin: 5%;
   font-size: var(--fs-small); 
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+ /* padding-top: 0.5em;
+  padding-bottom:;*/
 }
 .testimonials .comment {
   width: 85%;
   margin: 0 auto;
-  /*text-align: center;*/
   font-size: var(--fs-xx-small);  
+}
+.testimonials .review {
+  text-align: center;
+  width: 60%;
+  border: 0.1em solid var(--clr-font);
+  padding: 1em;
+  margin: 1em auto;
 }
 .testimonials > .fa-quote-right {
   margin-left: 95%;
   font-size: var(--fs-small); 
-  padding-bottom: 0.5em; 
+ /* padding-bottom: 0.5em; */
 }
 
 /* Contact*/
@@ -302,6 +308,7 @@ video {
     nav a,
     .card,
     .testimonials > .comment,
+    .testimonials .review,
     .question > .lead,
     .input-group-text,
     .form-label,
@@ -324,6 +331,7 @@ video {
   #house-gallery p,
   .card,
   .testimonials > .comment,
+  .testimonials .review,
   .question > .lead,
   .input-group-text,
   .form-label,
@@ -350,6 +358,7 @@ video {
   #house-gallery p,
   .card,
   .testimonials > .comment,
+  .testimonials .review,
   .question > .lead,
   .input-group-text,
   .form-label,
@@ -405,6 +414,7 @@ video {
   nav a,
   .card,
   .testimonials > .comment,
+  .testimonials .review,
   .question > .lead,
   .button:hover,
   .input-group-text,
@@ -426,7 +436,8 @@ video {
   header #hamburger,
   nav a,
   .card,
-  .testimonials > .comment
+  .testimonials > .comment,
+  .testimonials .review,
   .question > .lead,
   .input-group-text,
   .form-label,
