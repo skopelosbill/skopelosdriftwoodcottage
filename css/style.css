@@ -20,6 +20,7 @@
     --clr-bg: hsla(231 ,100%, 50%, 0.5);
     --clr-bg-pale:hsl(231 ,100%, 75%);
     --clr-font: hsla(60, 100%, 52%, 1);
+    --clr-font-pale:hsla(60, 100%, 52%, 0.8);
 }
 
 
@@ -246,7 +247,7 @@ ul {
 .input-group-text {
   padding: 10px;
   background-color: none;
-  color: var(--clr-bg);
+  color: var(--clr-font);
   min-width: 50px;
   text-align: center;
   font-size: var(--fs-x-small);
@@ -285,7 +286,7 @@ ul {
 ::placeholder {
   font-family: var(--ff-para);
   font-size: var(--fs-x-small);
-  color: var(--clr-font);
+  color: var(--clr-font-pale);
 }
 .icon {
   font-size: var(--fs-x-small);
